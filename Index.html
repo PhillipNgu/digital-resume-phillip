@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
         }
         header {
@@ -18,20 +18,55 @@
             padding: 20px;
             border-radius: 10px;
         }
-        section {
-            background: white;
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #666;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
-            margin: 20px 0;
+            background: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
             color: #333;
         }
+        ul {
+            list-style-type: square;
+        }
         img {
             display: block;
             margin: 10px auto;
             border-radius: 10px;
+            width: 150px;
+        }
+        .download-resume {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-resume a {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-resume a:hover {
+            background-color: #218838;
         }
     </style>
 </head>
@@ -39,65 +74,68 @@
     <header>
         <h1>Phillip Nguyen's Digital Resume</h1>
     </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="professional_phillip.jpg" alt="Professional Headshot of Phillip Nguyen">
+            <p>
+                Phillip Nguyen is an ambitious and driven senior at Mississippi State University,
+                pursuing a Bachelor of Science in Computer Engineering while also working toward an MBA
+                and a Master’s in Computer Engineering. Passionate about deep learning, robotics, and system-on-chip design.
+            </p>
+        </section>
 
-    <section>
-        <h2>About Me</h2>
-        <img src="professional_phillip.jpg" alt="Professional Headshot of Phillip Nguyen" width="200">
-        <p>
-            Phillip Nguyen is an ambitious and driven senior at Mississippi State University, 
-            pursuing a Bachelor of Science in Computer Engineering while also working toward an MBA 
-            and a Master’s in Computer Engineering.
-        </p>
-    </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Mississippi State University, Starkville, MS</strong></p>
+            <p>Bachelor of Science in Computer Engineering</p>
+            <p>Senior pursuing an MBA and a Master’s in Electrical and Computer Engineering</p>
+            <p><strong>GPA:</strong> 3.65/4.00</p>
+        </section>
 
-    <section>
-        <h2>Education</h2>
-        <p><strong>Mississippi State University, Starkville, MS</strong></p>
-        <p>Bachelor of Science in Computer Engineering</p>
-        <p>Senior pursuing an MBA and a Master’s in Electrical and Computer Engineering</p>
-        <p><strong>GPA:</strong> 3.65/4.00</p>
-    </section>
+        <section id="skills">
+            <h2>Key Skills</h2>
+            <ul>
+                <li>Adaptability</li>
+                <li>Critical Thinking</li>
+                <li>Time Management</li>
+                <li>Problem Solving</li>
+                <li>Strong Work Ethic</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Key Skills</h2>
-        <ul>
-            <li>Adaptability</li>
-            <li>Critical Thinking</li>
-            <li>Time Management</li>
-            <li>Problem Solving</li>
-            <li>Strong Work Ethic</li>
-        </ul>
-    </section>
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <h3>Electronics Associate</h3>
+            <p><strong>Walmart (6/6/2021 - 8/1/2022)</strong></p>
+            <p>Assisted customers and enhanced their knowledge in electronics. Gained experience in retail and team management.</p>
+            
+            <h3>Stadium Worker</h3>
+            <p><strong>CPI Group, LLC (8/3/2022 - Ongoing)</strong></p>
+            <p>Developed strong communication and teamwork skills. Implemented problem-solving techniques in a fast-paced environment.</p>
+            
+            <h3>Undergraduate Teaching Assistant</h3>
+            <p><strong>Mississippi State University (9/1/2023 - Ongoing)</strong></p>
+            <p>Assisted in teaching ECE 3714 (Digital Devices). Strengthened skills in teaching and logic design.</p>
+        </section>
 
-    <section>
-        <h2>Work Experience</h2>
-
-        <h3>Electronics Associate</h3>
-        <p><strong>Walmart (6/6/2021 - 8/1/2022)</strong></p>
-        <p>Assisted customers and enhanced their knowledge in electronics.</p>
-        <p>Gained experience in retail and team management.</p>
-
-        <h3>Stadium Worker</h3>
-        <p><strong>CPI Group, LLC (8/3/2022 - Ongoing)</strong></p>
-        <p>Developed strong communication and teamwork skills.</p>
-        <p>Implemented problem-solving techniques in a fast-paced environment.</p>
-
-        <h3>Undergraduate Teaching Assistant</h3>
-        <p><strong>Mississippi State University (9/1/2023 - Ongoing)</strong></p>
-        <p>Assisted in teaching ECE 3714 (Digital Devices).</p>
-        <p>Strengthened skills in teaching and logic design.</p>
-    </section>
-
-    <section>
-        <h2>Leadership and Volunteering</h2>
-        <p>Regularly volunteers for beach clean-ups and research data collection.</p>
-        <p>Led a sophomore mailbox development project.</p>
-        <p>Participated in the electrical team of FSAE (Bulldog Motorsports) before shifting focus to deep learning and satellite research with GCER.</p>
-    </section>
-
-    <section>
-        <h2>Awards</h2>
-        <p>Certificate of Special Congressional Recognition</p>
-    </section>
+        <section id="awards">
+            <h2>Awards</h2>
+            <p>Certificate of Special Congressional Recognition</p>
+        </section>
+    </div>
+    
+    <div class="download-resume">
+        <a href="resume.pdf" download>Download Resume (PDF)</a>
+    </div>
 </body>
 </html>
